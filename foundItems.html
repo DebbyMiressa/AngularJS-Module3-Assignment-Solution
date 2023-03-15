@@ -1,0 +1,14 @@
+<div>
+    <ol>
+        <li ng-repeat="item in NarrowItDown.found">
+
+            Name: {{ item.name }} <br>
+            Short Name: {{ item.short_name }} <br>
+            Description: {{item.description}} &emsp14;
+            <button ng-click="NarrowItDown.onRemove($index);">Don't want this one!</button>
+
+        </li>
+    </ol>
+    <div class="error" ng-if="NarrowItDown.emptyList()">Nothing found 🚫</div>
+
+</div>
